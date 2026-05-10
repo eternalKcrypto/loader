@@ -1,0 +1,19 @@
+if not LPH_OBFUSCATED then
+    LPH_NO_VIRTUALIZE = function(...) return ... end
+    LPH_ENCSTR = function(s) return s end
+    LPH_ENCFUNC = function(f) return f end
+    LPH_CRASH = function() end
+end
+
+local LPH_JIT_MAX = function(f) return f end -- Placeholder for LPH_JIT_MAX
+
+local CachedMainEvent -- initialized after ReplicatedStorage is defined
+…        local jumpCfg = shared.Chrome['Jump Power']
+in        if jumpCfg and jumpCfg.Enabled then
+            humanoid.UseJumpPower = true
+            humanoid.JumpPower = jumpCfg.Power or 75
+        elseif shared.Chrome['No Jump Cooldown'] and shared.Chrome['No Jump Cooldown'].Enabled then
+            humanoid.UseJumpPower = false
+        end
+    end
+end))
